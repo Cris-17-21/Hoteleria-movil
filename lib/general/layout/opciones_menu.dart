@@ -25,5 +25,17 @@ const List<ModeloOpcionesMenu> opcionesDelMenu = [
       ModeloOpcionesMenu(icono: Icons.assignment_turned_in, titulo: 'Check-in/Check-out', ruta: NombresRutas.checkInOut),
     ],
   ),
+  ModeloOpcionesMenu(
+    icono: Icons.shopping_cart,
+    titulo: 'Ventas',
+    subOpciones: [
+      ModeloOpcionesMenu(icono: Icons.shopping_cart, titulo: 'Punto de venta', ruta: NombresRutas.pos),
+    ],
+  ),
+  ModeloOpcionesMenu(
+    icono: Icons.payments,
+    titulo: 'Caja',
+    ruta: NombresRutas.caja,
+  ),
   // ... aplica lo mismo para las demás opciones
 ];
