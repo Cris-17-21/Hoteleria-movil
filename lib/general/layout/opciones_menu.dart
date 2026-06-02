@@ -84,5 +84,14 @@ const List<ModeloOpcionesMenu> opcionesDelMenu = [
     titulo: 'Almacén',
     ruta: NombresRutas.almacen,
   ),
-  // ... aplica lo mismo para las demás opciones
+  ModeloOpcionesMenu(
+    icono: Icons.build_outlined,
+    titulo: 'Mantenimiento',
+    ruta: NombresRutas.mantenimiento,
+  ),
+  ModeloOpcionesMenu(
+    icono: Icons.bar_chart_outlined,
+    titulo: 'Reportes',
+    ruta: NombresRutas.reportes,
+  ),
 ];
