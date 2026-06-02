@@ -47,6 +47,18 @@ const List<ModeloOpcionesMenu> opcionesDelMenu = [
     ],
   ),
   ModeloOpcionesMenu(
+    icono: Icons.shopping_cart,
+    titulo: 'Ventas',
+    subOpciones: [
+      ModeloOpcionesMenu(icono: Icons.shopping_cart, titulo: 'Punto de venta', ruta: NombresRutas.pos),
+    ],
+  ),
+  ModeloOpcionesMenu(
+    icono: Icons.payments,
+    titulo: 'Caja',
+    ruta: NombresRutas.caja,
+  ),
+  ModeloOpcionesMenu(
     icono: Icons.shopping_cart_outlined,
     titulo: 'Compras',
     subOpciones: [

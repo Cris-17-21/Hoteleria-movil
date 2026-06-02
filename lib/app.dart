@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:hoteleria_erp/modulos/caja/paginas/pagina_caja.dart';
+import 'package:hoteleria_erp/modulos/ventas/paginas/pagina_pos.dart';
 import 'general/tema/tema_app.dart';
 import 'modulos/inicio/paginas/almacen/almacen.dart';
 import 'modulos/inicio/paginas/compras/compras.dart';
@@ -23,6 +25,8 @@ class MyApp extends StatelessWidget {
         NombresRutas.dashboard: (context) =>
             const PaginaInicio(), // Constante aquí
         NombresRutas.comprasLista: (context) => const ComprasPage(),
+        NombresRutas.pos: (context) => const PaginaPOS(),
+        NombresRutas.caja: (context) => const PaginaCaja(),
         NombresRutas.productos: (context) => const ProductosPage(),
         NombresRutas.proveedores: (context) => const ProveedoresPage(),
         NombresRutas.almacen: (context) => const AlmacenPage(),
