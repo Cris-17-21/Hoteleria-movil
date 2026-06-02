@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
-import 'rutas/nombres_rutas.dart';
+
 import 'general/tema/tema_app.dart';
+import 'modulos/inicio/paginas/almacen/almacen.dart';
+import 'modulos/inicio/paginas/compras/compras.dart';
+import 'modulos/inicio/paginas/compras/productos.dart';
+import 'modulos/inicio/paginas/compras/proveedores.dart';
 import 'modulos/inicio/paginas/pagina_inicio.dart';
+import 'rutas/nombres_rutas.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -12,11 +17,16 @@ class MyApp extends StatelessWidget {
       title: 'HotelPMS',
       debugShowCheckedModeBanner: false,
       theme: HotelPMSAppTheme.darkTheme,
-      
+
       initialRoute: NombresRutas.dashboard, // Constante aquí
-      
+
       routes: {
-        NombresRutas.dashboard: (context) => const PaginaInicio(), // Constante aquí
+        NombresRutas.dashboard: (context) =>
+            const PaginaInicio(), // Constante aquí
+        NombresRutas.comprasLista: (context) => const ComprasPage(),
+        NombresRutas.productos: (context) => const ProductosPage(),
+        NombresRutas.proveedores: (context) => const ProveedoresPage(),
+        NombresRutas.almacen: (context) => const AlmacenPage(),
         // A medida que crees las páginas las vas agregando usando NombresRutas.tuRuta
       },
     );
